@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', automateCounter, false);
 function automateCounter(){
 const counters = document.querySelectorAll(".counter");
-const speed = 500; // Lower number equal faster count up animation
+const speed = 500; // Lower number equal faster count animation
 
 counters.forEach(counter => {
   const updateCount = () => {

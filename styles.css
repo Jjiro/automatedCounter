@@ -54,16 +54,19 @@ header h1 {
 }
 
 .counters .counter {
-  font-size: 45px;
+  font-size: 40px;
   margin: 10px 0;
 }
 
 @media (max-width: 600px) {
-    header h1 {
-        font-size: 40px;
-        color: #fff;
-        text-align: center;
-      }
+  header h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
   .counters .container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -72,5 +75,43 @@ header h1 {
   .counters .container > div:nth-of-type(2) {
     border-bottom: 1px #23a053 solid;
     padding-bottom: 10px;
+  }
+  .counters .counter {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+}
+
+@media (orientation: landscape) {
+  header {
+    flex: 1;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    max-height: 98px;
+  }
+  header h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .counters .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .counters .container > div:nth-of-type(1),
+  .counters .container > div:nth-of-type(2) {
+    border-bottom: 1px #23a053 solid;
+    padding-bottom: 2px;
+  }
+  .counters .counter {
+    font-size: 15px;
+    margin: 2px 0;
   }
 }
